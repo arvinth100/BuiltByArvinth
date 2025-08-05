@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvinthsamy S | Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section {
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .skill-badge {
+            transition: transform 0.3s ease;
+        }
+        .skill-badge:hover {
+            transform: translateY(-5px);
+        }
+        .project-card {
+            transition: box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-bold">Arvinthsamy S</h1>
+                    <p class="text-gray-600">Software Developer / Full Stack Developer</p>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section flex items-center justify-center">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Hello, I'm <span class="text-gray-800">Arvinthsamy</span></h1>
+                <p class="text-xl text-gray-600 mb-8">A passionate Software Developer specializing in full-stack web development with expertise in Java, Python, and modern web technologies.</p>
+                <a href="#about" class="inline-block px-8 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition duration-300">Explore My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-gray-50">
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-12">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Aspiring Web Developer with hands-on experience in front-end and back-end development using HTML, CSS, PHP, Java, and Python. Skilled in Oracle Cloud Infrastructure with strong problem-solving and web optimization abilities.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Passionate about building scalable and user-friendly web applications that solve real-world problems while delivering exceptional user experiences.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 bg-gray-200 rounded-full overflow-hidden shadow-xl">
+                        <!-- Placeholder for profile image -->
+                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                            <svg class="w-32 h-32 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-12">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Programming Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200">Programming</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">Java (Core & Advanced)</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">Python</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">SQL</span>
+                    </div>
+                </div>
+                
+                <!-- Web Skills -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200">Web Development</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">HTML</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">CSS</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">PHP</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">JavaScript</span>
+                    </div>
+                </div>
+                
+                <!-- Database & Tools -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 pb-2 border-b border-gray-200">Database & Tools</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">MySQL</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">MongoDB</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">Excel</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">Git</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">GitHub</span>
+                        <span class="skill-badge px-4 py-2 bg-gray-100 rounded-full">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-50">
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Event Management Web Application</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">HTML</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">CSS</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">PHP</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">MySQL</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">JavaScript</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        A dynamic web-based system for event registration and ticketing with a secure login system and MySQL database integration. The application features admin panels, user dashboards, and real-time event updates.
+                    </p>
+                    <div class="h-48 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
+                        <span class="text-gray-500">Project Screenshot</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sm font-medium text-gray-600 hover:text-black">View Code</a>
+                        <a href="#" class="text-sm font-medium text-gray-600 hover:text-black">Live Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 Placeholder -->
+                <div class="project-card bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">E-commerce Platform</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">Java</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">Spring Boot</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">React</span>
+                        <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">MongoDB</span>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Currently developing a full-stack e-commerce platform with product listings, shopping cart functionality, and secure payment processing. (Work in progress)
+                    </p>
+                    <div class="h-48 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
+                        <span class="text-gray-500">Coming Soon</span>
+                    </div>
+                    <div>
+                        <span class="text-sm font-medium text-gray-400">Available soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-12">Certifications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Certification 1 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-black transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-gray-100 p-3 rounded-full mr-4">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Java for Beginners</h3>
+                            <p class="text-gray-600 mb-2">Infosys Springboard</p>
+                            <p class="text-gray-700">Completed comprehensive training in Java fundamentals including OOP concepts, data structures, and exception handling.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certification 2 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-black transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-gray-100 p-3 rounded-full mr-4">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">MongoDB Basics</h3>
+                            <p class="text-gray-600 mb-2">MongoDB University</p>
+                            <p class="text-gray-700">Gained expertise in NoSQL database concepts, CRUD operations, indexing, aggregation framework, and data modeling with MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-gray-50">
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-12">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-lg text-gray-700 mb-8">
+                        I'm currently looking for new opportunities in software development. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>arvinthsamys@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>+91 883108050</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Portfolio by Arvinthsamy S. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
