@@ -171,7 +171,7 @@
   <!-- 🔤 Left: Text Content -->
   <div class="w-full md:w-1/2 text-center md:text-left relative z-10">
     <h1 class="text-5xl font-extrabold mb-4 text-slate-900">
-      Hello, I'm <span id="typed-name" class="glitter-text">Arvinthsamy S</span>
+      Hello, I'm <span id="typed-hero" class="glitter-text"> </span>
     </h1>
     
     <p class="text-lg text-slate-600 mb-4">
@@ -739,6 +739,16 @@
     loop: false,  // change to true if you want it to repeat
     showCursor: true,
     cursorChar: "|"
+
+     // Hero effect
+  new Typed("#typed-hero", {
+    strings: ["Arvinthsamy S"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: false,
+    showCursor: true,
+    cursorChar: "|"
+  });
   });
 </script>
 
@@ -746,6 +756,7 @@
 
 </body>
 </html>
+
 
 
 
