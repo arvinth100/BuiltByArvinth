@@ -124,6 +124,7 @@
       <div>
         <h1 class="text-2xl font-extrabold text-purple-500 hover:scale-105 transition-transform duration-300">
           Arvinthsamy S
+          <span id="typed-name"></span>
         </h1>
         <p class="text-sm text-slate-500 tracking-wide">
           Software Developer / Full Stack Developer
@@ -727,10 +728,25 @@
     detectRetina: true
   });
   </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed-name", {
+    strings: ["Arvinthsamy S"], // You can add more like ["Arvinthsamy S", "Software Developer"]
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: false,  // change to true if you want it to repeat
+    showCursor: true,
+    cursorChar: "|"
+  });
+</script>
+
   
 
 </body>
 </html>
+
 
 
 
